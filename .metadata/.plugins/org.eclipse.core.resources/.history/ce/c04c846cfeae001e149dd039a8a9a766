@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int hora = 24;
+		int inicio, fim, duracao;
+		System.out.print("Informe o horario de inicio do jogo: ");
+		inicio = sc.nextInt();		
+		System.out.print("Informe o horario de fim dso jogo: ");
+		fim = sc.nextInt();
+		duracao = inicio - fim;
+		if (duracao < 1 && duracao > 24) {
+			System.out.println("Duracao indeterminada, reinsira os dados");
+			System.out.print("Informe o horario de inicio do jogo: ");
+			inicio = sc.nextInt();		
+			System.out.print("Informe o horario de fim dso jogo: ");
+			fim = sc.nextInt();
+			duracao = inicio - fim;
+			System.out.printf("O jogo durou %n horas(h)", duracao);
+		}else {
+			System.out.printf("O jogo durou %n horas(h)", duracao);
+		}
+		sc.close();
+	}
+
+}

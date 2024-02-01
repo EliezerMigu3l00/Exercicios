@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		double interval; 
+		System.out.print("Informe um valor entre 0 e 100: ");
+		interval = sc.nextDouble();
+		if(interval >= 0 && interval <= 25) {
+			System.out.println("Intevalo [0, 25]");
+		}else if(interval > 25 && interval <= 50) {
+			System.out.println("Intevalo [25, 50]");
+		}else if(interval > 50 && interval <= 75) {
+			System.out.println("Intervalo [50, 75]");
+		}else if(interval > 75 && interval <= 100) {
+			System.out.println("Intervalo [75, 100]");
+		}else {
+			System.out.println("Fora do Intervalo");
+		}
+		sc.close();
+	}
+
+}

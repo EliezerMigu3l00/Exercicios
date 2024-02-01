@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		double renda, impostoDeRenda, valorFinal;
+		System.out.print("Informe sua renda: ");
+		renda = sc.nextDouble();
+		if(renda < 0) {
+			System.out.println("Renda invalida");
+			System.out.print("Informe sua renda: ");
+			renda = sc.nextDouble();
+		}else if (renda > 0 && renda < 2000) {
+			System.out.println("Isento");
+		}else if(renda > 2000 && renda < 3000) {
+			double porcen = 8.0 / 100.0;
+			valorFinal = renda + (porcen * renda);
+			impostoDeRenda = valorFinal - renda;
+			System.out.println(valorFinal);
+		}
+		sc.close();
+	}
+
+}

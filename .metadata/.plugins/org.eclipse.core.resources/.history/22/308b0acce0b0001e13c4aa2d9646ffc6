@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int[] codigo = new int[4];
+		String[] especificacao = new String[4];
+		double[] preco = new double[4];
+		codigo[0] = 1;
+		codigo[1] = 2;
+		codigo[2] = 3;
+		codigo[3] = 4;
+		codigo[4] = 5;
+		especificacao[0] = "Cachorro quente";
+		especificacao[1] = "X-Salada";
+		especificacao[2] = "X-Bacon";
+		especificacao[3] = "Torrada Simples";
+		especificacao[4] = "Refrigerante";
+		preco[0] = 4.00;
+		preco[1] = 4.50;
+		preco[2] = 5.00;
+		preco[3] = 2.00;
+		preco[4] = 1.50;
+		System.out.printf("Cardapio:\n Codigo: %d Espesificacao: %s Preco: %.2f\n Codigo: %d Espesificacao: %s Preco: %.2f\n Codigo: %d Espesificacao: %s Preco: %.2f\n Codigo: %d Espesificacao: %s Preco: %.2f\n Codigo: %d Espesificacao: %s Preco: %.2f\n",codigo[0], especificacao[0], preco[0],codigo[1], especificacao[1], preco[1],codigo[2], especificacao[2], preco[2],codigo[3], especificacao[3], preco[3],codigo[4], especificacao[4], preco[4]);
+		int codProd, quantidade;
+		System.out.print("Infome o codigo do produto: ");
+		codProd = sc.nextInt();
+		System.out.print("Informe a quantidade: ");
+		quantidade = sc.nextInt();
+
+	}
+
+}
